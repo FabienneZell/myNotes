@@ -1,0 +1,163 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-size: 16px;
+    background-image: url('img/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    backdrop-filter: blur(4px);
+    background-color: rgb(242, 242, 242);
+}
+
+.fullpage {
+  height: 100vh;
+}
+
+h1 {
+    color:#000000;
+    margin-bottom: 50px;
+    margin-top: 60px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#titleInput {
+    border: 0;
+    outline: none;
+    width: 380px;
+    padding-top: 16px;
+}
+
+#noteInput {
+    border: 0;
+    resize: none;
+    outline: none;
+    width: 380px; 
+}
+
+#content {
+    padding-top: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#addButton {
+    background-color: white;
+    border-radius: 5px;
+    border-color: transparent;
+    padding: 8px;
+}
+
+#addButton:hover {
+    background-color: lightgray;
+}
+
+#deleteButton {
+    margin-top: 50px;
+    width: 20px;
+    margin-bottom: 20px;
+}
+
+#deleteButton:hover {
+    width: 25px;
+}
+
+.write {
+    background-color: white;
+    width: 400px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    margin-bottom: 32px;
+    box-shadow: 0 2px 8px 0 rgb(0, 0, 0, 40%);    
+}
+
+.note {
+    width: 300px;
+    height:auto;
+    background-color: white;
+    margin-bottom: 32px;
+    padding-top: 16px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 2px 8px 0 rgb(0, 0, 0, 20%);
+    height: 150px;
+}
+
+.text-width {
+    width: 250px;
+}
+
+
+
+
+
+
+@media(max-width: 450px) {
+
+    .write{
+        width: 300px;
+        height: 150px;
+    }
+
+    #titleInput {
+        width: 180px;
+    }
+    
+    #noteInput {
+        width: 180px; 
+    }
+
+    .note {
+        width: 180px;
+        height: 150px;
+    }
+
+    #addButton {
+      margin-bottom: 8px;
+    }
+
+    #deleteButton {
+        width: 1em;
+        margin-top: 1em;
+    }
+
+    .delete {
+        height: 1em;
+    }
+
+    .text-width {
+      width: 100px;
+  }
+}
+
+
+@media(max-width: 350px) {
+
+  .write{
+    width: 250px;
+  }
+}
+
+
+@media(max-width: 300px) {
+
+  .write{
+    width: 200px;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+}
+
+
+
